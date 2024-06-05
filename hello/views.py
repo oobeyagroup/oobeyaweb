@@ -8,12 +8,10 @@ from .models import Greeting
 
 
 def index(request):
-    times = int(os.environ.get('TIMES', 3))
-    return HttpResponse('Hello! ' * times)
-     # return render(request, "index.html")
+    return render(request, "index.html")
 
 
-def db(request):
+# def db(request):
     # If you encounter errors visiting the `/db/` page on the example app, check that:
     #
     # When running the app on Heroku:
@@ -24,9 +22,9 @@ def db(request):
     # When running the app locally:
     #   1. You have run `./manage.py migrate` to create the `hello_greeting` database table.
 
-    greeting = Greeting()
-    greeting.save()
+    # greeting = Greeting()
+    # greeting.save()
 
-    greetings = Greeting.objects.all()
+    # greetings = Greeting.objects.all()
 
-    return render(request, "db.html", {"greetings": greetings})
+    # return render(request, "db.html", {"greetings": greetings})
