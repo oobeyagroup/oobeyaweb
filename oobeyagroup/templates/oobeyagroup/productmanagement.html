@@ -3,7 +3,7 @@
 {% block content %}
 <main>
     <!-- start hero section -->
-    <section class="bg-cover d-flex align-items-center" style="background-image: linear-gradient(180deg, rgba(30, 24, 53, 0.4) 0%, rgba(30, 24, 53, 0.4) 90.16%), url(../assets/images/program-hero-single-img.jpg)">
+    <section class="bg-cover bg-shape d-flex align-items-center" style="background-image: linear-gradient(180deg, rgba(30, 24, 53, 0.4) 0%, rgba(30, 24, 53, 0.4) 90.16%), url('{% static 'oobeyagroup/images/program-hero-single-img.jpg' %}' )">
         <div class="container">
             <div class="row">
                 <div class="offset-xxl-2 col-xxl-8 col-lg-10 offset-lg-1 col-md-12 col-12">
@@ -103,14 +103,14 @@
                         <!-- col -->
                         <div class="col-6 me-n4 me-xl-n9 me-xxl-n12 ms-xxl-8">
                             <!-- image -->
-                            <img src="../assets/images/showcase-img-1.jpg" alt="showcase" class="img-fluid mb-3 rounded" />
-                            <img src="../assets/images/showcase-img-2.jpg" alt="showcase" class="img-fluid rounded" />
+                            <img src="{% static 'oobeyagroup/images/showcase-img-1.jpg' %}" alt="showcase" class="img-fluid mb-3 rounded" />
+                            <img src="{% static 'oobeyagroup/images/showcase-img-2.jpg' %}" alt="showcase" class="img-fluid rounded" />
                         </div>
                         <!-- col -->
                         <div class="col-6">
                             <!-- image -->
-                            <img src="../assets/images/showcase-img-3.jpg" alt="showcase" class="img-fluid mb-3 rounded" />
-                            <img src="../assets/images/showcase-img-4.jpg" alt="showcase" class="img-fluid rounded" />
+                            <img src="{% static 'oobeyagroup/images/showcase-img-3.jpg' %}" alt="showcase" class="img-fluid mb-3 rounded" />
+                            <img src="{% static 'oobeyagroup/images/showcase-img-4.jpg' %}" alt="showcase" class="img-fluid rounded" />
                         </div>
                     </div>
                 </div>
@@ -126,7 +126,7 @@
             <div class="offset-xxl-3 col-xxl-6 offset-lg-1 col-lg-10 col-md-12 col-12 text-center">
                 <!-- heading -->
                 <h2 class="mb-8">Prepare yourself for an eye-opening experience.</h2>
-                <div class="z-1 position-relative rounded-3 py-18 border-white border bg-cover" style="background-image: url(../assets/images/video-img.png)">
+                <div class="z-1 position-relative rounded-3 py-18 border-white border bg-cover" style="background-image: url('{% static 'oobeyagroup/images/video-img.png' %}' )">
                     <a class="popup-youtube icon-shape rounded-circle btn-play icon-xl text-decoration-none" href="https://www.youtube.com/watch?v=JRzWRZahOVU">
                         <i class="fas fa-play"></i>
                     </a>
@@ -304,7 +304,7 @@
                             </p>
                             <!-- image -->
                             <div class="d-flex align-items-center">
-                                <img src="../assets/images/avatar-3.png" alt="avatar" class="avatar-xl rounded-circle me-3" />
+                                <img src="{% static 'oobeyagroup/images/avatar-3.png' %}" alt="avatar" class="avatar-xl rounded-circle me-3" />
                                 <div>
                                     <h5 class="mb-1">Nathan Howard</h5>
                                     <p class="mb-0 font-12 text-muted">Actress and producer</p>
@@ -325,7 +325,7 @@
                             </p>
                             <!-- image -->
                             <div class="d-flex align-items-center">
-                                <img src="../assets/images/avatar-4.png" alt="avatar" class="avatar-xl rounded-circle me-3" />
+                                <img src="{% static 'oobeyagroup/images/avatar-4.png' %}" alt="avatar" class="avatar-xl rounded-circle me-3" />
                                 <div>
                                     <h5 class="mb-1">Lily Bell</h5>
                                     <p class="mb-0 font-12 text-muted">CEO and Founder of WomanImpact</p>
