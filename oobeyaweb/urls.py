@@ -21,6 +21,7 @@ import oobeyagroup.views
 app_name = "oobeyagroup"
 urlpatterns = [
     path("", oobeyagroup.views.index, name="index"),
+    path("oobeyagroup/agileandscrum", oobeyagroup.views.agileandscrum, name="agileandscrum"),
     path("oobeyagroup/technologyleadership", oobeyagroup.views.technologyleadership, name="technologyleadership"),
     path("oobeyagroup/productmanagement", oobeyagroup.views.productmanagement, name="productmanagement"),
     path("oobeyagroup/softwaredevelopment", oobeyagroup.views.softwaredevelopment, name="softwaredevelopment"),

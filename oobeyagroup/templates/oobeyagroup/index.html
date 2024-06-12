@@ -5,7 +5,6 @@
 <!-- start hero section -->
 <section class="bg-shape bg-cover" style="background-image: linear-gradient(180deg, rgba(30, 24, 53, 0.4) 0%, rgba(30, 24, 53, 0.4) 90.16%), url('{% static 'oobeyagroup/images/og-LowellClose-sm.png' %}')">
     <div class="container">
-        <img src="{% static 'oobeyagroup/images/og-oobeyagroup_logo_tr.png' %}" class="img-fluid" alt=""></img>
         <div class="row">
             <div class="offset-lg-2 col-lg-8 col-md-12 col-12">
                 <div class="py-lg-16 py-xxl-19 py-15 text-light text-center">
@@ -13,7 +12,7 @@
                     <h1 class="text-white mb-3 display-4">Welcome to The Oobeya Group</h1>
                     <!-- para -->
                     <p class="lead mb-0">
-                       We specialize you helping leadership professionals improve both their skills and their organization's capabilities. Our expertise enhances technology leadership, product management, and software development professional. 
+                       We specialize in helping technology leaders improve  their skills and organization's capabilities. Our expertise enhances technology leadership, product management, and software development competencies. 
                     </p>
                 </div>
             </div>
@@ -21,16 +20,41 @@
     </div>
 </section>
 <!-- end of hero section -->
+
 <!-- start program grid -->
 <section class="py-xxl-16 py-lg-8 py-6">
     <div class="container">
+        <div class="row">
+            <!-- thumbnail -->
+            <div class="col-lg-12 col-md-12">
+                <!-- card -->
+                <div class="card border-0">
+                    <!-- image -->
+                    <a href="{% url 'agileandscrum' %}" class="img-zoom">
+                        <img class="rounded img-fluid " src="{% static 'oobeyagroup/images/og-workshop.png' %}" alt="thumb" />
+                    </a>
+                </div>
+                <div class="card border-0">
+                    <!-- card body -->
+                    <div class="card-body mt-n13 bg-white me-6 rounded-end p-5">
+                        <!-- heading -->
+                        <a href="{% url 'agileandscrum' %}">
+                            <h3 class="mb-3">Agile & Scrum</h3>
+                        </a>
+                        <p>Agile & Scrum assigned to individuals, regardless of their qualifications due to the ongoing explosive growth in technology. Our offerings help these leaders succeed. </p>
+                         <a href="{% url 'agileandscrum' %}" class="btn-primary-link">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="row">
             <!-- thumbnail -->
             <div class="col-lg-4 col-md-6 mb-6">
                 <!-- card -->
                 <div class="card border-0">
                     <!-- image -->
-                    <a href="program-single.html" class="img-zoom">
+                    <a href="{% url 'technologyleadership' %}" class="img-zoom">
                         <img class="rounded img-fluid w-100" src="{% static 'oobeyagroup/images/thumb-img-1.jpg' %}" alt="thumb" />
                     </a>
                 </div>
@@ -38,10 +62,10 @@
                     <!-- card body -->
                     <div class="card-body mt-n13 bg-white me-6 rounded-end p-5">
                         <!-- heading -->
-                        <a href="program-single.html">
+                        <a href="{% url 'technologyleadership' %}">
                             <h3 class="mb-3">Technology Leadership</h3>
                         </a>
-                        <p>Technology Leadership is often assigned to individuals, regardless of their qualifications due to the ongoing explosive growth in technology. Our offerings aim to help these leaders. </p>
+                        <p>Technology Leadership is often assigned to individuals, regardless of their qualifications due to the ongoing explosive growth in technology. Our offerings help these leaders succeed. </p>
  <!--                        <p class="font-13 fw-medium">
                             <span class="me-2">2 Weekly</span>
                             <span>40-Minute Sessions</span>
@@ -55,7 +79,7 @@
                 <!-- card -->
                 <div class="card border-0">
                     <!-- image -->
-                    <a href="program-single.html" class="img-zoom">
+                    <a href="{% url 'productmanagement' %}" class="img-zoom">
                         <img class="rounded img-fluid w-100" src="{% static 'oobeyagroup/images/thumb-img-2.jpg' %}" alt="thumb" />
                     </a>
                 </div>
@@ -63,10 +87,10 @@
                     <!-- card body -->
                     <div class="card-body mt-n13 bg-white me-6 rounded-end p-5">
                         <!-- heading -->
-                        <a href="program-single.html">
+                        <a href="{% url 'productmanagement' %}">
                             <h3 class="mb-3">Product Management</h3>
                         </a>
-                        <p>Product Management, at its core, is not a role or box on a org chart. 3Our offerings focus first on your critical needs in the area of product management and then explores the best organizational approaches to accomplish them.</p>
+                        <p>Product Management, at its core, is not a role or box on a org chart. Our offerings focus first on your critical needs in the area of product management and then explores the best organizational approaches to accomplish them.</p>
  <!--                        <p class="font-13 fw-medium">
                             <span class="me-2">3 Weekly</span>
                             <span>30-Minute Sessions</span>
@@ -80,13 +104,13 @@
                 <!-- card -->
                 <div class="card border-0">
                     <!-- image -->
-                    <a href="program-single.html" class="img-zoom">
+                    <a href="{% url 'softwaredevelopment' %}" class="img-zoom">
                         <img class="rounded img-fluid w-100" src="{% static 'oobeyagroup/images/thumb-img-3.jpg' %}" alt="thumb" />
                     </a>
                 </div>
                 <div class="card border-0">
                     <div class="card-body mt-n13 bg-white me-6 rounded-end p-5">
-                        <a href="program-single.html">
+                        <a href="{% url 'softwaredevelopment' %}">
                             <h3 class="mb-3">Software Development</h3>
                         </a>
                         <p>Software Development requires an effective balance three, often conflicting things. These are technology, people, and business. Our offerings address all three of these critical things tailored to your needs. </p>

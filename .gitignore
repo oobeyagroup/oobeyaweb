@@ -9,3 +9,39 @@ db.sqlite3
 
 # macOS files
 .DS_Store
+
+# Images not in use
+oobeyagroup/static/oobeyagroup/images/og-ALN-logo-final-copy-H150.jpg
+oobeyagroup/static/oobeyagroup/images/og-ALN_Houston-logo-final-copy-H150.jpg
+oobeyagroup/static/oobeyagroup/images/og-AdobeStock_309686622.jpeg
+oobeyagroup/static/oobeyagroup/images/og-Agile_Alliance_Logo_Color.png
+oobeyagroup/static/oobeyagroup/images/og-KelloggSOM_V_RGB.png
+oobeyagroup/static/oobeyagroup/images/og-Lowell-speaking-Agile-2010_5620Blue copy.jpg
+oobeyagroup/static/oobeyagroup/images/og-Lowell-speaking-Agile-2010_5620Blue copy.png
+oobeyagroup/static/oobeyagroup/images/og-Lowell-speaking-Agile-2010_5620Blue.jpg
+oobeyagroup/static/oobeyagroup/images/og-LowellClose.png
+oobeyagroup/static/oobeyagroup/images/og-LowellMunich.png
+oobeyagroup/static/oobeyagroup/images/og-McCormick_Vertical-Basic.png
+oobeyagroup/static/oobeyagroup/images/og-active-campaign.png
+oobeyagroup/static/oobeyagroup/images/og-active-campaign.svg
+oobeyagroup/static/oobeyagroup/images/og-alnaa.png
+oobeyagroup/static/oobeyagroup/images/og-cust-activecampaign.svg
+oobeyagroup/static/oobeyagroup/images/og-cust-miller-t.png
+oobeyagroup/static/oobeyagroup/images/og-cust-miller.png
+oobeyagroup/static/oobeyagroup/images/og-cust-peapod-sm.png
+oobeyagroup/static/oobeyagroup/images/og-cust-peapod.png
+oobeyagroup/static/oobeyagroup/images/og-cust-statefarm-sm.png
+oobeyagroup/static/oobeyagroup/images/og-cust-statefarm.png
+oobeyagroup/static/oobeyagroup/images/og-cust-sungard-vector-logo-sm.png
+oobeyagroup/static/oobeyagroup/images/og-cust-sungard-vector-logo.png
+oobeyagroup/static/oobeyagroup/images/og-doi.png
+oobeyagroup/static/oobeyagroup/images/og-kanbancover.png
+oobeyagroup/static/oobeyagroup/images/og-kanbancover350x400.png
+oobeyagroup/static/oobeyagroup/images/og-lku-logo-4.png
+oobeyagroup/static/oobeyagroup/images/og-oobeyagroup_logo.png
+oobeyagroup/static/oobeyagroup/images/og-oobeyagroup_logo_gr.jpg
+oobeyagroup/static/oobeyagroup/images/og-oobeyagroup_logo_gr.png
+oobeyagroup/static/oobeyagroup/images/og-oobeyagroup_logo_gr.svg
+oobeyagroup/static/oobeyagroup/images/og-oobeyagroup_logo_gr200.jpg
+oobeyagroup/static/oobeyagroup/images/og-oobeyagroup_logo_wh.png
+oobeyagroup/static/oobeyagroup/images/og-sai_logo_rgb-400.png

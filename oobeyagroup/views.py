@@ -9,6 +9,9 @@ from django.shortcuts import render
 def index(request):
     return render(request, "oobeyagroup/index.html")
 
+def agileandscrum(request):
+    return render(request, "oobeyagroup/agileandscrum.html")    
+
 def technologyleadership(request):
     return render(request, "oobeyagroup/technologyleadership.html")    
 
