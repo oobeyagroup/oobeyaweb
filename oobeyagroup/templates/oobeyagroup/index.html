@@ -3,17 +3,21 @@
 {% block content %}
 
 <!-- start hero section -->
-<section class="bg-shape bg-cover" style="background-image: linear-gradient(180deg, rgba(30, 24, 53, 0.4) 0%, rgba(30, 24, 53, 0.4) 90.16%), url('{% static 'oobeyagroup/images/og-LowellClose-sm.png' %}')">
+<section class="bg-shape bg-cover" style="background-image: linear-gradient(180deg, rgba(30, 24, 53, 0.4) 0%, rgba(30, 24, 53, 0.4) 90.16%), url('{% static 'oobeyagroup/images/og-LowellClose-lgsm.png' %}')">
     <div class="container">
         <div class="row">
-            <div class="offset-lg-2 col-lg-8 col-md-12 col-12">
-                <div class="py-lg-16 py-xxl-19 py-15 text-light text-center">
+            <div class="col-lg-8 col-md-12 col-12">
+                <div class="py-lg-16 py-xxl-19 py-15 text-light text-left">
                     <!-- heading -->
                     <h1 class="text-white mb-3 display-4">Welcome to The Oobeya Group</h1>
                     <!-- para -->
-                    <p class="lead mb-0">
-                       We specialize in helping technology leaders improve  their skills and organization's capabilities. Our expertise enhances technology leadership, product management, and software development competencies. 
+<!--                     <p class="lead mb-0">
+                       For nearly 20 years, Oobeya Group has specialized in helping technology leaders improve their teams' skills and organizational capabilities. Our expertise enhances technology leadership, product management, and software development competencies. 
                     </p>
+ --><!--                     <p class="lead mt-3 mb-0">
+                       Oobeya Group founder, Lowell Lindstrom, applies 40 years of professional experience in software development to customize services to each customer.  He was an early adopter of now common leadership, product management, and agile & scrum software development techniques.  This allows him to share the essential principles of what makes those practices work rather than the popular dogma.
+                    </p> -->
+
                 </div>
             </div>
         </div>
@@ -31,17 +35,17 @@
                 <div class="card border-0">
                     <!-- image -->
                     <a href="{% url 'agileandscrum' %}" class="img-zoom">
-                        <img class="rounded img-fluid " src="{% static 'oobeyagroup/images/og-workshop.png' %}" alt="thumb" />
+                        <img class="rounded img-fluid " src="{% static 'oobeyagroup/images/og-960x250-placeholder2.png' %}" alt="thumb" />
                     </a>
                 </div>
                 <div class="card border-0">
                     <!-- card body -->
-                    <div class="card-body mt-n13 bg-white me-6 rounded-end p-5">
+                    <div class="card-body mt-n13 bg-white me-6 rounded-end ">
                         <!-- heading -->
                         <a href="{% url 'agileandscrum' %}">
-                            <h3 class="mb-3">Agile & Scrum</h3>
+                            <h3>Agile & Scrum</h3>
                         </a>
-                        <p>Agile & Scrum assigned to individuals, regardless of their qualifications due to the ongoing explosive growth in technology. Our offerings help these leaders succeed. </p>
+                        <p>Lowell was the part of the team that incubated the Agile movement. He did the did the product management work on the first agile developer course offering in 1999, product owner offering in 2000 and the north american agile conference in 2001.  Our services help you succeed with agile practices based on the early principles over the populist dogma that has failed so many companies.</p>
                          <a href="{% url 'agileandscrum' %}" class="btn-primary-link">Read more</a>
                     </div>
                 </div>
@@ -55,7 +59,7 @@
                 <div class="card border-0">
                     <!-- image -->
                     <a href="{% url 'technologyleadership' %}" class="img-zoom">
-                        <img class="rounded img-fluid w-100" src="{% static 'oobeyagroup/images/thumb-img-1.jpg' %}" alt="thumb" />
+                        <img class="rounded img-fluid w-100" src="{% static 'oobeyagroup/images/thumb-img-1-copy.jpg' %}" alt="thumb" />
                     </a>
                 </div>
                 <div class="card border-0">
@@ -66,11 +70,7 @@
                             <h3 class="mb-3">Technology Leadership</h3>
                         </a>
                         <p>Technology Leadership is often assigned to individuals, regardless of their qualifications due to the ongoing explosive growth in technology. Our offerings help these leaders succeed. </p>
- <!--                        <p class="font-13 fw-medium">
-                            <span class="me-2">2 Weekly</span>
-                            <span>40-Minute Sessions</span>
-                        </p>
- -->                        <a href="{% url 'technologyleadership' %}" class="btn-primary-link">Read more</a>
+                        <a href="{% url 'technologyleadership' %}" class="btn-primary-link">Read more</a>
                     </div>
                 </div>
             </div>
@@ -80,7 +80,7 @@
                 <div class="card border-0">
                     <!-- image -->
                     <a href="{% url 'productmanagement' %}" class="img-zoom">
-                        <img class="rounded img-fluid w-100" src="{% static 'oobeyagroup/images/thumb-img-2.jpg' %}" alt="thumb" />
+                        <img class="rounded img-fluid w-100" src="{% static 'oobeyagroup/images/thumb-img-2-copy.jpg' %}" alt="thumb" />
                     </a>
                 </div>
                 <div class="card border-0">
@@ -91,11 +91,7 @@
                             <h3 class="mb-3">Product Management</h3>
                         </a>
                         <p>Product Management, at its core, is not a role or box on a org chart. Our offerings focus first on your critical needs in the area of product management and then explores the best organizational approaches to accomplish them.</p>
- <!--                        <p class="font-13 fw-medium">
-                            <span class="me-2">3 Weekly</span>
-                            <span>30-Minute Sessions</span>
-                        </p>
- -->                        <a href="{% url 'productmanagement' %} " class="btn-primary-link">Read more</a>
+                        <a href="{% url 'productmanagement' %} " class="btn-primary-link">Read more</a>
                     </div>
                 </div>
             </div>
@@ -105,7 +101,7 @@
                 <div class="card border-0">
                     <!-- image -->
                     <a href="{% url 'softwaredevelopment' %}" class="img-zoom">
-                        <img class="rounded img-fluid w-100" src="{% static 'oobeyagroup/images/thumb-img-3.jpg' %}" alt="thumb" />
+                        <img class="rounded img-fluid w-100" src="{% static 'oobeyagroup/images/thumb-img-3-copy.jpg' %}" alt="thumb" />
                     </a>
                 </div>
                 <div class="card border-0">
@@ -114,11 +110,7 @@
                             <h3 class="mb-3">Software Development</h3>
                         </a>
                         <p>Software Development requires an effective balance three, often conflicting things. These are technology, people, and business. Our offerings address all three of these critical things tailored to your needs. </p>
-<!--                         <p class="font-13 fw-medium">
-                            <span class="me-2">2 Weekly</span>
-                            <span>50-Minute Sessions</span>
-                        </p>
- -->                        <a href="{% url 'softwaredevelopment' %}" class="btn-primary-link">Read more</a>
+                        <a href="{% url 'softwaredevelopment' %}" class="btn-primary-link">Read more</a>
                     </div>
                 </div>
             </div>
