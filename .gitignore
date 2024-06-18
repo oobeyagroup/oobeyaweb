@@ -10,7 +10,22 @@ db.sqlite3
 # macOS files
 .DS_Store
 
-# Images not in use
+# Images/files not in use
+
+oobeyagroup/templates/oobeyagroup/about-me.html
+oobeyagroup/templates/oobeyagroup/blog-category.html
+oobeyagroup/templates/oobeyagroup/blog-classic.html
+oobeyagroup/templates/oobeyagroup/blog-single.html
+oobeyagroup/templates/oobeyagroup/blog.html
+oobeyagroup/templates/oobeyagroup/booking-page.html
+oobeyagroup/templates/oobeyagroup/case-studies.html
+oobeyagroup/templates/oobeyagroup/case-study-single.html
+oobeyagroup/templates/oobeyagroup/course-single.html
+oobeyagroup/templates/oobeyagroup/course-thumbnail.html
+
+oobeyagroup/static/oobeyagroup/images/6E839463-4062-41CC-8601-2040434A6F5E.webp
+oobeyagroup/static/oobeyagroup/images/ChatCPT1.tiff
+oobeyagroup/static/oobeyagroup/images/og-LowellClose-lgsm copy.png
 oobeyagroup/static/oobeyagroup/images/og-ALN-logo-final-copy-H150.jpg
 oobeyagroup/static/oobeyagroup/images/og-ALN_Houston-logo-final-copy-H150.jpg
 oobeyagroup/static/oobeyagroup/images/og-AdobeStock_309686622.jpeg

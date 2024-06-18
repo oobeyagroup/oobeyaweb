@@ -1,32 +1,38 @@
 {% extends "oobeyagroup/base.html" %}
 {% load static %}
 {% block content %}
-
 <!-- start hero section -->
 <section class="bg-shape bg-cover" style="background-image: linear-gradient(180deg, rgba(30, 24, 53, 0.4) 0%, rgba(30, 24, 53, 0.4) 90.16%), url('{% static 'oobeyagroup/images/og-LowellClose-lgsm.png' %}')">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-md-12 col-12">
+            <div class="col-lg-6 col-md-8 col-8">
                 <div class="py-lg-16 py-xxl-19 py-15 text-light text-left">
                     <!-- heading -->
-                    <h1 class="text-white mb-3 display-4">Welcome to The Oobeya Group</h1>
+                    <h1 class="text-white mb-3 display-5">Welcome to<br> The Oobeya Group</h1>
                     <!-- para -->
-<!--                     <p class="lead mb-0">
-                       For nearly 20 years, Oobeya Group has specialized in helping technology leaders improve their teams' skills and organizational capabilities. Our expertise enhances technology leadership, product management, and software development competencies. 
-                    </p>
- --><!--                     <p class="lead mt-3 mb-0">
+                    <!--                     <p class="lead mt-3 mb-0">
                        Oobeya Group founder, Lowell Lindstrom, applies 40 years of professional experience in software development to customize services to each customer.  He was an early adopter of now common leadership, product management, and agile & scrum software development techniques.  This allows him to share the essential principles of what makes those practices work rather than the popular dogma.
                     </p> -->
-
                 </div>
             </div>
         </div>
     </div>
 </section>
 <!-- end of hero section -->
-
+<section class="py-xxl-2 py-lg-2 py-2">
+    <div class="container">
+        <div class="row">
+            <!-- thumbnail -->
+            <div class="col-lg-12 col-md-12">
+                <p class="lead mb-0 fs-4">
+                    For nearly 20 years, Oobeya Group has specialized in helping technology leaders improve their teams' skills and organizational capabilities. Our expertise enhances technology leadership, product management, and software development competencies.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- start program grid -->
-<section class="py-xxl-16 py-lg-8 py-6">
+<section class="py-xxl-4 py-lg-4 py-4">
     <div class="container">
         <div class="row">
             <!-- thumbnail -->
@@ -45,16 +51,15 @@
                         <a href="{% url 'agileandscrum' %}">
                             <h3>Agile & Scrum</h3>
                         </a>
-                        <p>Lowell was the part of the team that incubated the Agile movement. He did the did the product management work on the first agile developer course offering in 1999, product owner offering in 2000 and the north american agile conference in 2001.  Our services help you succeed with agile practices based on the early principles over the populist dogma that has failed so many companies.</p>
-                         <a href="{% url 'agileandscrum' %}" class="btn-primary-link">Read more</a>
+                        <p class="fs-4">Lowell was the part of the team that incubated the Agile movement. He did the did the product management work on the first agile developer course offering in 1999, product owner offering in 2000 and the north american agile conference in 2001. Our services help you succeed with agile practices based on the early principles over the populist dogma that has failed so many companies.</p>
+                        <a href="{% url 'agileandscrum' %}" class="btn-primary-link">Read more</a>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="row">
             <!-- thumbnail -->
-            <div class="col-lg-4 col-md-6 mb-6">
+            <div class="col-lg-4 col-md-12 6">
                 <!-- card -->
                 <div class="card border-0">
                     <!-- image -->
@@ -69,13 +74,13 @@
                         <a href="{% url 'technologyleadership' %}">
                             <h3 class="mb-3">Technology Leadership</h3>
                         </a>
-                        <p>Technology Leadership is often assigned to individuals, regardless of their qualifications due to the ongoing explosive growth in technology. Our offerings help these leaders succeed. </p>
+                        <p class="fs-4">Technology Leadership is often assigned to individuals, regardless of their qualifications due to the ongoing explosive growth in technology. Our offerings help these leaders succeed. </p>
                         <a href="{% url 'technologyleadership' %}" class="btn-primary-link">Read more</a>
                     </div>
                 </div>
             </div>
             <!-- thumbnail -->
-            <div class="col-lg-4 col-md-6 mb-6">
+            <div class="col-lg-4 col-md-12 ">
                 <!-- card -->
                 <div class="card border-0">
                     <!-- image -->
@@ -90,13 +95,13 @@
                         <a href="{% url 'productmanagement' %}">
                             <h3 class="mb-3">Product Management</h3>
                         </a>
-                        <p>Product Management, at its core, is not a role or box on a org chart. Our offerings focus first on your critical needs in the area of product management and then explores the best organizational approaches to accomplish them.</p>
+                        <p class="fs-4">Product Management, at its core, is not a role or box on a org chart. Our offerings focus first on your critical needs in the area of product management and then explores the best organizational approaches to accomplish them.</p>
                         <a href="{% url 'productmanagement' %} " class="btn-primary-link">Read more</a>
                     </div>
                 </div>
             </div>
             <!-- thumbnail -->
-            <div class="col-lg-4 col-md-6 mb-6">
+            <div class="col-lg-4 col-md-12 ">
                 <!-- card -->
                 <div class="card border-0">
                     <!-- image -->
@@ -109,7 +114,7 @@
                         <a href="{% url 'softwaredevelopment' %}">
                             <h3 class="mb-3">Software Development</h3>
                         </a>
-                        <p>Software Development requires an effective balance three, often conflicting things. These are technology, people, and business. Our offerings address all three of these critical things tailored to your needs. </p>
+                        <p class="fs-4">Software Development requires an effective balance three, often conflicting things. These are technology, people, and business. Our offerings address all three of these critical things tailored to your needs. </p>
                         <a href="{% url 'softwaredevelopment' %}" class="btn-primary-link">Read more</a>
                     </div>
                 </div>
@@ -118,15 +123,30 @@
     </div>
 </section>
 <!-- end of program grid -->
-<div class="container py-4">
-    <div class="p-5 mb-4 bg-body-tertiary rounded-3">
-        <div class="container-fluid py-5">
-            <div class="fs-1 lead text-center"> 
-                If you need help getting the most out of your agile and scrum efforts, please give us a call at 630-335-0889 or email: lowell@oobeyagroup.com.
-                
+<!-- start gallery section -->
+<section class="pb-0">
+    <div class="container">
+        <div class="row">
+            <div class="offset-xl-3 col-xl-6 col-lg-8 offset-lg-2 offset-md-1 col-md-10 col-12">
+                <div class="card border-2">
+                    <div class="card-body p-6">
+                        <div class="mb-4 text-center">
+                            <!-- content -->
+                            <h2 class="mb-3 fs-3">
+                                Wherever you are on your software product development journey, we can accelerate your improvement forward.
+                            </h2>
+                            <p class="mb-0 fs-4">
+                                Give us a call or text
+                                <span class="text-dark">630-335-0889</span>
+                                or email <span class="text-dark"> lowell@oobeyagroup.com</span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
+            </div>
         </div>
     </div>
-</div>
-<div class="fs-1 lead text-center">Have a great day!</div>
+</section>
+<!-- end of gallery section -->
+<div class="display-5-1 lead text-center">Have a great day!</div>
 {% endblock %}
