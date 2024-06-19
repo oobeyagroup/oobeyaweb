@@ -19,7 +19,12 @@
     </div>
 </section>
 <!-- end of hero section -->
-<section class="py-xxl-2 py-lg-2 py-2">
+<!-- <section class="py-xxl-2 py-lg-2 py-2" style="background: linear-gradient(360deg, #ffffff 0%, rgba(255, 255, 255, 0) 102.23%), #f8f8f8">
+    <div class="container">
+    </div>
+</section> -->
+<!-- start program grid -->
+<section class="py-xxl-4 py-lg-4 py-4" style="background: linear-gradient(360deg, #f8f8f8 0%, rgba(255, 255, 255, 0) 102.23%), #ffffff">
     <div class="container">
         <div class="row">
             <!-- thumbnail -->
@@ -29,24 +34,20 @@
                 </p>
             </div>
         </div>
-    </div>
-</section>
-<!-- start program grid -->
-<section class="py-xxl-4 py-lg-4 py-4">
-    <div class="container">
-        <div class="row">
+                <div class="row">
             <!-- thumbnail -->
             <div class="col-lg-12 col-md-12">
                 <!-- card -->
-                <div class="card border-0">
+                <div> <!-- <div class="card border-0">.  -->
                     <!-- image -->
-                    <a href="{% url 'agileandscrum' %}" class="img-zoom">
+<!--                     <a href="{% url 'agileandscrum' %}" class="img-zoom">
                         <img class="rounded img-fluid " src="{% static 'oobeyagroup/images/og-960x250-placeholder2.png' %}" alt="thumb" />
                     </a>
-                </div>
-                <div class="card border-0">
+ -->                </div>
+                 <div> <!-- <div class="card border-0"> -->
                     <!-- card body -->
-                    <div class="card-body mt-n13 bg-white me-6 rounded-end ">
+                    <!-- <div class="card-body mt-n13 bg-white me-6 rounded-end "> -->
+                    <div class="me-6 rounded-end ">
                         <!-- heading -->
                         <a href="{% url 'agileandscrum' %}">
                             <h3>Agile & Scrum</h3>
@@ -57,6 +58,12 @@
                 </div>
             </div>
         </div>
+
+    </div>
+</section>
+<section class="py-xxl-4 py-lg-4 py-4">
+    <div class="container">
+
         <div class="row">
             <!-- thumbnail -->
             <div class="col-lg-4 col-md-12 6">
@@ -123,30 +130,27 @@
     </div>
 </section>
 <!-- end of program grid -->
-<!-- start gallery section -->
-<section class="pb-0">
-    <div class="container">
-        <div class="row">
-            <div class="offset-xl-3 col-xl-6 col-lg-8 offset-lg-2 offset-md-1 col-md-10 col-12">
-                <div class="card border-2">
-                    <div class="card-body p-6">
-                        <div class="mb-4 text-center">
-                            <!-- content -->
-                            <h2 class="mb-3 fs-3">
-                                Wherever you are on your software product development journey, we can accelerate your improvement forward.
-                            </h2>
-                            <p class="mb-0 fs-4">
-                                Give us a call or text
-                                <span class="text-dark">630-335-0889</span>
-                                or email <span class="text-dark"> lowell@oobeyagroup.com</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+<section class="py-lg-8 py-6 top-shape" style="background: linear-gradient(360deg, #ffffff 0%, rgba(255, 255, 255, 0) 102.23%), #f8f8f8">
+     <div class="offset-xl-3 col-xl-6 col-lg-8 offset-lg-2 offset-md-1 col-md-10 col-12">
+         <div class="card border-2">
+             <div class="card-body p-6">
+                 <div class="mb-4 text-center">
+                     <!-- content -->
+                     <h2 class="mb-3 fs-3">
+                         Wherever you are on your software product development journey, we can accelerate your improvement forward.
+                     </h2>
+                     <p class="mb-0 fs-4">
+                         Give us a call or text
+                         <span class="text-dark">630-335-0889</span>
+                         or email <span class="text-dark"> lowell@oobeyagroup.com</span>
+                     </p>
+                 </div>
+             </div>
+         </div>
+     </div>
 </section>
+<!-- end of testimonials -->
 <!-- end of gallery section -->
 <div class="display-5-1 lead text-center">Have a great day!</div>
 {% endblock %}
