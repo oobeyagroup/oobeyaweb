@@ -246,7 +246,7 @@
 }
 
 .text-bottom-line:after {
-    background-image: url(../images/yoga/line-shape.svg);
+    background-image: url(../images/line-shape.svg);
     background-repeat: no-repeat;
     bottom: 0;
     content: "";
