@@ -19,6 +19,7 @@ from django.urls import path
 
 import oobeyagroup.views
 app_name = "oobeyagroup"
+handler500 = 'oobeyagroup.views.custom_500_view'
 urlpatterns = [
     path("", oobeyagroup.views.index, name="index"),
     path("oobeyagroup/agileandscrum", oobeyagroup.views.agileandscrum, name="agileandscrum"),

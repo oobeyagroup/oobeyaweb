@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 
 # Create your views here.
-
+handler500 = 'myapp.views.custom_500_view'
 
 def index(request):
     return render(request, "oobeyagroup/index.html")
@@ -21,3 +21,5 @@ def productmanagement(request):
 def softwaredevelopment(request):
     return render(request, "oobeyagroup/softwaredevelopment.html")    
 
+def custom_500_view(request):
+    return render(request, 'oobeyagroup/500.html', status=500)
