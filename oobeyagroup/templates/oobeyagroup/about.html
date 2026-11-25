@@ -1,0 +1,63 @@
+{% extends "oobeyagroup/base.html" %}
+{% load static %}
+{% block title %}About Lowell Lindstrom | The Oobeya Group{% endblock %}
+{% block og_title %}About Lowell Lindstrom | The Oobeya Group{% endblock %}
+{% block description %}Lowell Lindstrom founded The Oobeya Group in 2005 and is among the early pioneers of Agile software development, with 40 years of experience building and deploying software products.{% endblock %}
+{% block og_description %}Lowell Lindstrom founded The Oobeya Group in 2005 and is among the early pioneers of Agile software development.{% endblock %}
+{% block content %}
+<section class="bg-cover bg-shape d-flex align-items-center" style="background-image: linear-gradient(180deg, rgba(30, 24, 53, 0.55) 0%, rgba(30, 24, 53, 0.55) 90.16%), url('{% static 'oobeyagroup/images/program-hero-single-img.jpg' %}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center" style="padding-top: 9rem; padding-bottom: 5rem">
+                    <h1 class="text-white mb-0 display-4">About Lowell Lindstrom</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-lg-8 py-6">
+    <div class="container">
+        <div class="row align-items-start">
+            <div class="col-lg-4 col-12 mb-5 mb-lg-0">
+                <img src="{% static 'oobeyagroup/images/og-LowellClose-sm.png' %}" alt="Lowell Lindstrom" class="img-fluid rounded-3">
+            </div>
+            <div class="col-lg-8 col-12 ps-lg-6">
+                <p class="lead">Lowell Lindstrom has been involved in developing and deploying software products for 40 years and is among the early pioneers in Agile software development. He is the founder of The Oobeya Group. He has guided agile transformations with dozens of companies and hundreds of teams across a diverse set of industries, domains, and technologies.</p>
+                <p>Lowell wrote software through high school and college, graduating from Northwestern University with a BS in Computer Science. He began his professional career as a software developer with Teradyne Telecommunications. After succeeding in a wide breadth of roles at all levels of the product engineering organization, he held management roles focusing on TQM, Product Management, and Sales. In 1998, he received his MM degree from the Kellogg Graduate School of Management. He is a member of the Industry Advisory Board for the MSIT program at Northwestern University&rsquo;s McCormick School of Engineering.</p>
+                <p>From 1998 to 2005, Lowell was a partner, ran the business operations, and created the role of Agile Business Coach at Object Mentor, the company that incubated the agile movement. In 1999, he worked with many of the Agile Manifesto creators to develop the first and benchmark Agile learning experience, XP Immersion&trade;. In 2001, Lowell developed the first commercially available course on the business practices of Agile (the precursor to modern Product Owner and Agile Leadership training).</p>
+                <p>In 2005, Lowell founded The Oobeya Group, which helps organizations spread the successful use of agile techniques to all teams and functional areas. Lowell also served as VP, Services for VersionOne, leading a broad team of technical and enterprise agile coaches.</p>
+                <p class="mb-0">Lowell most values pragmatism, and leverages in-the-trenches experience across a broad background to enable client success.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-lg-8 py-6 bg-light">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="offset-lg-1 col-lg-10 col-12 text-center">
+                <h2 class="mb-3">In the Agile community</h2>
+                <p class="lead mb-0">Lowell continually takes on speaking and leadership roles in the Agile community, keeping him at the forefront of the latest techniques and agile thinking. He has been involved in the creation and leadership of the most influential organizations in the Agile community.</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            {% for org in orgs %}
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="card h-100 border-0 text-center">
+                    <div class="card-body p-5">
+                        <div class="d-flex align-items-center justify-content-center mb-4" style="height: 90px">
+                            <img src="{% static org.logo %}" alt="{{ org.name }} logo" class="img-fluid" style="max-height: 90px">
+                        </div>
+                        <h3 class="h5 mb-2">{{ org.name }}</h3>
+                        <ul class="list-unstyled fw-semibold mb-3">
+                            {% for role in org.roles %}<li>{{ role }}</li>{% endfor %}
+                        </ul>
+                        <p class="mb-0 small">{{ org.text }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -25,6 +25,7 @@ urlpatterns = [
     path("oobeyagroup/agileandscrum", oobeyagroup.views.agileandscrum, name="agileandscrum"),
     path("oobeyagroup/technologyleadership", oobeyagroup.views.technologyleadership, name="technologyleadership"),
     path("oobeyagroup/productmanagement", oobeyagroup.views.productmanagement, name="productmanagement"),
+    path("oobeyagroup/about", oobeyagroup.views.about, name="about"),
     path("oobeyagroup/softwaredevelopment", oobeyagroup.views.softwaredevelopment, name="softwaredevelopment"),
     # Uncomment this and the entry in `INSTALLED_APPS` if you wish to use the Django admin feature:
     # https://docs.djangoproject.com/en/5.0/ref/contrib/admin/

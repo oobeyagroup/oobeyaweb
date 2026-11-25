@@ -34,6 +34,7 @@ PAGES = [
     "/oobeyagroup/technologyleadership",
     "/oobeyagroup/productmanagement",
     "/oobeyagroup/softwaredevelopment",
+    "/oobeyagroup/about",
 ]
 
 
