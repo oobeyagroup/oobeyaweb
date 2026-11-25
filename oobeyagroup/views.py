@@ -30,7 +30,7 @@ def softwaredevelopment(request):
 ORGS = [
     {
         "name": "Agile Alliance",
-        "roles": ["Conference Program Chair, 2001, 2004 and 2010"],
+        "roles": ["Conference co-Program Chair, 2001, 2004 and 2010"],
         "logo": IMG + "og-Agile_Alliance_Logo_Color.png",
         "text": "A global nonprofit organization dedicated to promoting the concepts of Agile software development as outlined in the Agile Manifesto.",
     },
@@ -48,7 +48,7 @@ ORGS = [
     },
     {
         "name": "Kanban University",
-        "roles": ["Kanban Coaching Professional", "Kanban Management Professional"],
+        "roles": ["Kanban Coaching Professional(past)", "Kanban Management Professional(past)"],
         "logo": IMG + "og-lku-logo-4.png",
         "text": "Runs several programs to build awareness and assure quality in Kanban implementations for professional services work.",
     },
