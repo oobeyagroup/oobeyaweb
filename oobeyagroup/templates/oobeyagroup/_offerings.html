@@ -1,0 +1,21 @@
+<section class="py-lg-8 py-6 bg-light">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h2 class="mb-0">How we help</h2>
+            </div>
+        </div>
+        <div class="row g-4">
+            {% for item in offerings %}
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="card h-100 border-0">
+                    <div class="card-body p-5">
+                        <h3 class="h5 mb-3 text-primary">{{ item.name }}</h3>
+                        <p class="mb-0">{{ item.text }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
