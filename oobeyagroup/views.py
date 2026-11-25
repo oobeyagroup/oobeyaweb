@@ -1,14 +1,22 @@
 from django.shortcuts import render
 
+from .offerings import CLIENTS, OFFERINGS
+
 IMG = "oobeyagroup/images/"
 
 
 def _service(request, template, heading, hero_image):
-    return render(request, f"oobeyagroup/{template}.html", {"heading": heading, "hero_image": IMG + hero_image})
+    offerings = [{"name": n, "text": t} for n, t in OFFERINGS[template]]
+    return render(
+        request,
+        f"oobeyagroup/{template}.html",
+        {"heading": heading, "hero_image": IMG + hero_image, "offerings": offerings},
+    )
 
 
 def index(request):
-    return render(request, "oobeyagroup/index.html")
+    clients = [{"name": n, "logo": IMG + f} for n, f in CLIENTS]
+    return render(request, "oobeyagroup/index.html", {"clients": clients})
 
 
 def agileandscrum(request):
