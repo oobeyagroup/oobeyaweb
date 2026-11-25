@@ -1,0 +1,26 @@
+{% extends "oobeyagroup/base.html" %}
+{% load static %}
+{% block title %}{{ heading }} | The Oobeya Group{% endblock %}
+{% block og_title %}{{ heading }} | The Oobeya Group{% endblock %}
+{% block content %}
+<section class="bg-cover bg-shape d-flex align-items-center" style="background-image: linear-gradient(180deg, rgba(30, 24, 53, 0.55) 0%, rgba(30, 24, 53, 0.55) 90.16%), url('{% static hero_image %}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center" style="padding-top: 9rem; padding-bottom: 5rem">
+                    <h1 class="text-white mb-0 display-4">{{ heading }}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-lg-8 py-6">
+    <div class="container">
+        <div class="row">
+            <div class="offset-lg-1 col-lg-10 col-12">
+                {% block intro %}{% endblock %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

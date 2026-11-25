@@ -42,9 +42,11 @@ SECRET_KEY = os.environ.get(
 # https://devcenter.heroku.com/articles/heroku-ci#immutable-environment-variables
 IS_HEROKU_APP = "DYNO" in os.environ and not "CI" in os.environ
 
+# Set by build_site.py when rendering the site to static HTML for GitHub Pages.
+IS_STATIC_BUILD = bool(os.environ.get("STATIC_BUILD"))
+
 # SECURITY WARNING: don't run with debug turned on in production!
-if not IS_HEROKU_APP:
-    DEBUG = True
+DEBUG = not IS_HEROKU_APP and not IS_STATIC_BUILD
 
 # On Heroku, it's safe to use a wildcard for `ALLOWED_HOSTS``, since the Heroku router performs
 # validation of the Host header in the incoming HTTP request. On other platforms you may need to
@@ -53,7 +55,7 @@ if not IS_HEROKU_APP:
 if IS_HEROKU_APP:
     ALLOWED_HOSTS = ["*"]
 else:
-    ALLOWED_HOSTS = [".localhost", "127.0.0.1", "[::1]", "0.0.0.0"]
+    ALLOWED_HOSTS = [".localhost", "127.0.0.1", "[::1]", "0.0.0.0", "testserver"]
 
 
 # Application definition
@@ -69,7 +71,6 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "django_extensions",
     "oobeyagroup",
 ]
 
@@ -171,8 +172,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_ROOT = BASE_DIR / "staticfiles"
-STATIC_URL = "static/"
+STATIC_ROOT = Path(os.environ.get("STATIC_BUILD_ROOT", BASE_DIR / "staticfiles"))
+STATIC_URL = "/static/"
 
 STORAGES = {
     # Enable WhiteNoise's GZip and Brotli compression of static assets:
@@ -185,6 +186,14 @@ STORAGES = {
 # Don't store the original (un-hashed filename) version of static files, to reduce slug size:
 # https://whitenoise.readthedocs.io/en/latest/django.html#WHITENOISE_KEEP_ONLY_HASHED_FILES
 WHITENOISE_KEEP_ONLY_HASHED_FILES = True
+
+if IS_STATIC_BUILD:
+    # GitHub Pages serves the collected files as-is, so skip hashing and compression.
+    STORAGES["staticfiles"] = {"BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage"}
+
+if IS_HEROKU_APP:
+    SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+    SECURE_SSL_REDIRECT = True
 
 
 # Default primary key field type
