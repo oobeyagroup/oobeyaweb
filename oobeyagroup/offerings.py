@@ -32,5 +32,5 @@ CLIENTS = [
     ("Peapod", "og-cust-peapod.png"),
     ("Miller", "og-cust-miller-t.png"),
     ("SunGard", "og-cust-sungard-vector-logo.png"),
-    ("ActiveCampaign", "og-cust-activecampaign.svg"),
+    ("ActiveCampaign", "og-cust-activecampaign.png"),
 ]
